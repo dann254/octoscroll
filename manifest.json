@@ -1,0 +1,19 @@
+{
+  "name": "Octoscroll",
+  "version": "1.0",
+  "description": "Fix the bottom scrollbar hiding pre formated text/code on github pull requests",
+  "manifest_version": 2,
+  "author": "Daniel Kipkemei",
+  "homepage_url": "https://github.com/dann254/stack-overflow-padding",
+  "icons": {
+    "429": "icon.png"
+  },
+  "permissions": ["https://github.com/*/*/pull/*"],
+  "content_scripts": [
+    {
+    "css": ["style.css"],
+    "js": ["content.js"],
+    "matches": ["https://github.com/*/*/pull/*"]
+    }
+  ]
+}
